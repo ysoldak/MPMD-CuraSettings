@@ -56,7 +56,6 @@
         "retraction_speed": { "default_value": 50 },
         "retraction_hop_enabled": { "default_value": true },
         "retract_at_layer_change": { "default_value": true },
-        "coasting_enable": { "default_value": true },
-        "relative_extrusion": { "value": true }
+        "coasting_enable": { "default_value": true }
     }
 }
