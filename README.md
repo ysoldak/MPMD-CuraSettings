@@ -1,10 +1,9 @@
 # MPMD
 Monoprice Mini Delta
 
-## Cura profile
+## [Cura profile](slicers/cura/README.md)
 
 My take on MPMD profile for Ultimaker Cura 3.2+ (shall work with 3.3, in beta now).
-See [slicers/cura/README.md] for more defails.
 
 ## Calibration
 
