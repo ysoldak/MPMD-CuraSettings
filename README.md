@@ -16,6 +16,7 @@ See [slicers/cura/README.md] for more defails.
 
 - Mastering Cura https://ultimaker.com/en/resources/21932-mastering-cura
 - Print Faster https://ultimaker.com/en/resources/21918-print-faster
+- Relative extrusion http://www.sublimelayers.com/2017/10/to-extruder-relative-or-not-to-extrude.html
 
 - Troubleshooting by S3D https://www.simplify3d.com/support/print-quality-troubleshooting/
 
