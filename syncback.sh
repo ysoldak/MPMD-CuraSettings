@@ -3,17 +3,23 @@
 VERSION=${1:-3.2}
 TYPE=${2:-all}
 
+# -----------------------------------------------------------------------------
+
+CURA_HOME=${CURA_HOME:-${HOME}"/Library/Application Support/cura"}
+CURA_DIR="${CURA_HOME}/${VERSION}"
+
+# -----------------------------------------------------------------------------
+
 pgrep -q cura
 if [ "$?" == "0" ]; then
     echo "Cura is running, exit and run this script again"
     exit 1
 fi
 
-# TODO make work on linux also
-CURA_HOME="${HOME}/Library/Application Support/cura/${VERSION}"
+# -----------------------------------------------------------------------------
 
 echo "Syncing back machine changes from cura dir"
-echo "   ${CURA_HOME}"
+echo "   ${CURA_DIR}"
 echo 
 
 for file in `find -E . -regex ".*\.(cfg|stl|json)" | sort`; do
@@ -21,7 +27,7 @@ for file in `find -E . -regex ".*\.(cfg|stl|json)" | sort`; do
     basename=`basename $file`
     if [ "${TYPE}" == "all" ] || [ "${TYPE}" == "${dirname}" ]; then
         echo "  < ${basename}"
-        cp "${CURA_HOME}/${dirname}/${basename}" "`pwd`/${dirname}/${basename}"
+        cp "${CURA_DIR}/${dirname}/${basename}" "`pwd`/${dirname}/${basename}"
     else
         echo "  ~ ${basename}"
     fi
