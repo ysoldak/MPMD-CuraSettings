@@ -2,7 +2,7 @@
 
 My take on MPMD profile for Ultimaker Cura 3.2+ (shall work with 3.3, in beta now).
 
-Inspired by [Brian Corbino's Cura 3.2 profile](https://www.mpminidelta.com/slicers/cura)
+Inspired by [Brian Corbino's Cura 3.2 profile](https://www.mpminidelta.com/slicers/cura)  
 Inherits from [default Cura fdmprinter definition](https://github.com/Ultimaker/Cura/blob/master/resources/definitions/fdmprinter.def.json)
 
 ## Justification
