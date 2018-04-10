@@ -8,29 +8,25 @@ if [ "$?" == "0" ]; then
     exit 1
 fi
 
+# TODO make work on linux also
 CURA_HOME="${HOME}/Library/Application Support/cura/${VERSION}"
 
 echo "Installing machine into cura dir: ${CURA_HOME}"
 
-echo "  > Adding definition"
-mkdir -p "${CURA_HOME}/definitions"
-cp ./definitions/*.json        "${CURA_HOME}/definitions/"
-
-echo "  > Adding start and end codes"
-mkdir -p "${CURA_HOME}/definition_changes"
-cp ./definition_changes/*.cfg  "${CURA_HOME}/definition_changes/"
-
-echo "  > Adding build platform mesh"
-mkdir -p "${CURA_HOME}/meshes"
-cp ./meshes/*.stl              "${CURA_HOME}/meshes/"
-
-echo "  > Adding machine instance"
-cp ./machine_instances/*.cfg "${CURA_HOME}/machine_instances/"
-
-echo "  > Adding extruder configuration"
-cp ./extruders/*.cfg "${CURA_HOME}/extruders/"
-
-echo "  > Adding user settings (preserves existing)"
-cp -n ./user/*.cfg "${CURA_HOME}/user/"
+for file in `find -E . -regex ".*\.(cfg|stl|json)"`; do
+    dirname=`dirname $file | sed s,\./,,`
+    basename=`basename $file`
+    echo "Installing ${basename}"
+    mkdir -p "${CURA_HOME}/${dirname}"
+    if [ "${dirname}" == "definition_changes" ]; then
+        # force install start/end gcode definitions
+        cp "`pwd`/${dirname}/${basename}" "${CURA_HOME}/${dirname}/${basename}"
+    else
+        # do not overwrite file at destination to preserve user settings, quality selected, etc
+        cp -n "`pwd`/${dirname}/${basename}" "${CURA_HOME}/${dirname}/${basename}"
+    fi
+    # Linking does not work since Cura re-creates configuration files instead of updating them
+    #ln -s `pwd`/${dirname}/${basename} "${CURA_HOME}/${dirname}/${basename}"
+done
 
 echo "Done!"
