@@ -17,7 +17,7 @@ I've tried to keep definition short and to the point, and only hardware related 
 
 Max values were learned from `M503` command, they somewhat differ from Brian's version -- quite lower. Feels safer to keep them to factory defaults and hopefully this improves time estimates in the slicer, when it knows the limits of the machine. Or, alternatively, if machine is capable of better, that new max values, probably, shall be set on both printer and slicer to match anyway.
 
-Start and End gcodes are in separate `.cfg` file -- easier to edit them there. The drawback is this requies machine instance to be pre-configured on Cura, install script (see below) takes care of that.
+[Start and End gcodes](definition_changes/Monoprice+Mini+Delta_settings.inst.cfg) are in separate `.cfg` file -- easier to edit them there. The drawback is this requies machine instance to be pre-configured on Cura, install script (see below) takes care of that.
 
 ## Usage
 
