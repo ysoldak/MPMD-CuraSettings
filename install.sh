@@ -1,6 +1,7 @@
 #!/bin/bash
 
 VERSION=${1:-3.2}
+TYPE=${2:-definition_changes}
 
 # -----------------------------------------------------------------------------
 
@@ -25,7 +26,7 @@ for file in `find -E . -regex ".*\.(cfg|stl|json)"`; do
     dirname=`dirname $file | sed s,\./,,`
     basename=`basename $file`
     mkdir -p "${CURA_DIR}/${dirname}"
-    if [ "${dirname}" == "definition_changes" ]; then
+    if [ "${TYPE}" == "all" ] || [ "${TYPE}" == "${dirname}" ]; then
         # force install start/end gcode definitions
         echo "  > ${basename}"
         cp "`pwd`/${dirname}/${basename}" "${CURA_DIR}/${dirname}/${basename}"
