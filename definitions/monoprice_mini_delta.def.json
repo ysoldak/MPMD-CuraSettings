@@ -52,9 +52,9 @@
         "machine_max_jerk_xy": { "default_value": 20 },
         "machine_max_jerk_z": { "default_value": 20 },
         "machine_max_jerk_e": { "default_value": 5},
-        "retraction_amount": { "default_value": 3.5 },
+        "retraction_amount": { "default_value": 4 },
         "retraction_speed": { "default_value": 50 },
-        "retraction_hop_enabled": { "default_value": true },
+        "retraction_hop_enabled": { "default_value": false },
         "retract_at_layer_change": { "default_value": true },
         "coasting_enable": { "default_value": true }
     }
