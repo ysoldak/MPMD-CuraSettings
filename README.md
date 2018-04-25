@@ -1,6 +1,6 @@
 # Ultimaker Cura 3.2+ printer profile
 
-My take on MPMD profile for Ultimaker Cura 3.2+ (shall work with 3.3, in beta now).
+My take on MPMD profile for Ultimaker Cura 3.3+.
 
 Inspired by [Brian Corbino's Cura 3.2 profile](https://www.mpminidelta.com/slicers/cura)  
 Inherits from [default Cura fdmprinter definition](https://github.com/Ultimaker/Cura/blob/master/resources/definitions/fdmprinter.def.json)
@@ -9,7 +9,7 @@ Inherits from [default Cura fdmprinter definition](https://github.com/Ultimaker/
 
 While Brian Corbino's profile is good, it feels like many settings can be actually ommited, others adjusted.
 
-Also, I've got tired of Cura 3.3beta dropping my start/end gcodes all the time, so I wrote these scripts to be able track them with git and push to Cura when and if needed.
+Also, I've got tired of Cura 3.3 beta dropping my start/end gcodes all the time, so I wrote these scripts to be able track them with git and push to Cura when and if needed.
 
 ## Details
 
