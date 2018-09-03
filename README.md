@@ -62,3 +62,4 @@ Rest is documented in the code itself and probably going to change form time to 
 - [Relative extrusion](http://www.sublimelayers.com/2017/10/to-extruder-relative-or-not-to-extrude.html)
 - [Retraction: Just say "No" to oozing](https://www.matterhackers.com/articles/retraction-just-say-no-to-oozing)
 - [Troubleshooting by S3D](https://www.simplify3d.com/support/print-quality-troubleshooting/)
+- [Best Support Settings for 3D Printing](https://www.instructables.com/id/Best-Support-Settings-for-3D-Printing/)
