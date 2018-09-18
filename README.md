@@ -1,6 +1,9 @@
 # Ultimaker Cura 3.3+ printer profile
 
-My take on MPMD profile for Ultimaker Cura 3.3+.
+My take on MPMD profile for Ultimaker Cura 3.2+.
+
+Tested to be working with Cura 3.2 up to 3.4.1 and MPMD firmware v41.  
+Be advised newer Mini Deltas (firmware v43) have improved stepper drivers with better resolution, so you'll need make changes to start gcode and use `114.28` instead of `57.14` in `M92` command.
 
 Inspired by [Brian Corbino's Cura 3.2 profile](https://www.mpminidelta.com/slicers/cura)  
 Inherits from [default Cura fdmprinter definition](https://github.com/Ultimaker/Cura/blob/master/resources/definitions/fdmprinter.def.json)
