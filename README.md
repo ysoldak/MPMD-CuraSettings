@@ -1,4 +1,4 @@
-# Ultimaker Cura 3.3+ printer profile
+# Ultimaker Cura 3.2+ printer profile
 
 My take on MPMD profile for Ultimaker Cura 3.2+.
 
