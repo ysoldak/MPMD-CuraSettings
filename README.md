@@ -3,7 +3,7 @@
 My take on MPMD profile for Ultimaker Cura 3.2+.
 
 Tested to be working with Cura 3.2 up to 3.4.1 and MPMD firmware v41.  
-Be advised newer Mini Deltas (firmware v43) have improved stepper drivers with better resolution.
+Be advised newer Mini Deltas (firmware v43) have improved stepper drivers with better resolution.  
 Please use this [M92 line](https://github.com/ysoldak/MPMD-CuraSettings/blob/master/definition_changes/Monoprice%2BMini%2BDelta_settings.inst.cfg#L20) instead if you're using firmware 43 & up  
 `M92 X114.28 Y114.28 Z114.28 E97.00`
 
