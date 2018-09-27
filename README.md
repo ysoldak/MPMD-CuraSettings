@@ -59,6 +59,7 @@ Rest is documented in the code itself and probably going to change form time to 
 - [Advanced Delta Printer Calibration](https://www.thingiverse.com/thing:745523)
 - [3D Benchy](https://www.thingiverse.com/thing:763622)
 - [Overhang / Cooling Test](https://www.thingiverse.com/thing:2699454/)
+- [Triffid Hunter's Calibration Guide](https://reprap.org/wiki/Triffid_Hunter%27s_Calibration_Guide)
 
 ### 3D print tips and troubleshooting
 
